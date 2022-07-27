@@ -17,3 +17,7 @@ export function getColorBackground() {
 export function getColorListElement() {
   return document.querySelector('#colorList')
 }
+
+export function getInactiveColorList() {
+  return document.querySelectorAll('#colorList > li:not(.active)')
+}
