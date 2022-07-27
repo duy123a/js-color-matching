@@ -121,6 +121,11 @@ function resetGame() {
   showTimerText('')
   // re-generate new colors
   initColor()
+  // reset background color
+  const colorBackgroundElement = getColorBackground()
+  if (colorBackgroundElement) {
+    colorBackgroundElement.style.backgroundColor = 'goldenrod'
+  }
   // reset timer
   startTimer()
 }
